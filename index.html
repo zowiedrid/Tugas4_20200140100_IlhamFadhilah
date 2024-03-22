@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Pokemon List</title>
+  </head>
+  <body class="bg-blue-200">
+    <h1 class="text-center text-3xl my-5">Daftar Pokemon</h1>
+    <input
+      type="text"
+      id="search"
+      class="w-full mb-5 p-2"
+      placeholder="Cari Pokemon..."
+    />
+    <table class="table-auto w-full text-left whitespace-no-wrap">
+      <thead>
+        <tr>
+          <th
+            class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl"
+          >
+            Nama
+          </th>
+          <th
+            class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100"
+          >
+            Jenis
+          </th>
+          <th
+            class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100"
+          >
+            Elemen
+          </th>
+          <th
+            class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tr rounded-br"
+          >
+            Gambar
+          </th>
+        </tr>
+      </thead>
+      <tbody id="pokemonTable"></tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
